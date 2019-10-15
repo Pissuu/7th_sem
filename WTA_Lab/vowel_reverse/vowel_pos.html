@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>leftmost position</title>
+<script>
+function find_vowel(st)
+{
+	var pos=st.search(/[aeiouAEIOU]/);
+	if(pos<0){
+	alert('not found position');
+	}
+	else{
+	alert('found in position:'+(pos+1));
+	}
+	
+}
+</script>
+<style>
+input[type=button]
+{
+	background: blue;
+	width:4cm;
+	font-size:20px;
+	font-weight:500;
+	color:white;
+}
+input[type=text]
+{
+	align:center;
+	display:green;
+	color:red;
+	width:21%;
+	font-size:20px;
+}
+</style>
+</head>
+<body bgcolor=pink>
+<form><p color=red>enter the vowel</p>
+<input type="text" name="name" id="vowel_text"/>
+<input type="button" name="b_name" value="click" onclick="find_vowel(vowel_text.value)"/>
+</form>
+</body>
+</html>
+
+	
+	

@@ -1,0 +1,24 @@
+th
+{
+		color:red;
+		font-size:20px
+}
+table
+{
+	border-collapse:seperate;
+}
+td:hover
+{
+	
+	background-color: green;
+}
+tr:nth-child(odd)
+{
+	background-color: white;
+	color:red;
+}
+tr:nth-child(even)
+{
+	background-color: gold;
+	color:red;
+}

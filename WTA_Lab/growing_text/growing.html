@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<script>
+		var size=5;
+		var mystyle=setInterval(growText,100);
+		function growText()
+		{
+			if(size<50)
+			{
+			document.getElementById("m1").style.color='red';
+			document.getElementById("m1").style.fontSize=size+'pt';
+			size=size+1;
+			}
+			else
+			{
+			clearInterval(mystyle);
+			document.getElementById("m1").style.color='blue';
+			document.getElementById("m1").innerHTML="TEXT SHRINKING";
+			mystyle=setInterval(shrinkText,100);
+			}
+		}
+		function shrinkText()
+		{
+			if(size>5)
+			{
+			document.getElementById("m1").style.fontSize=size+'pt';
+			size=size-1;
+			}
+			else
+			{
+			clearInterval(mystyle);
+			size=10;
+			document.getElementById("m1").innerHTML="TEXT GROWING";
+			mystyle=setInterval(growText,100);
+			}
+		}
+		</script>
+	</head>
+<body>
+	<p id="m1">TEXT-GROWING</p>
+</body>
+</html>
